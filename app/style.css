@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Poppins",sans-serif;
+
+}
+
+header{
+	display: flex;
+	background: #171C8F;
+	padding: 10px;
+	align-items: center;
+}
+
+body{
+	
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: Lavender;
+	
+}
+
+.logo{
+	background: #171C8F;
+	width: 100%;
+	height: 120px;
+	border: solid 2px #e06287;
+	margin:  0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.logo img{
+	width: 140px;
+}
+
+/*@supports(object-fit: cover){
+    .logo img{
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 -50px;*/
+    
+.contenedorIngreso{
+	background: #e06287;
+}
+
+.ingreso {
+  margin: 10px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 0 15px 0 15px ;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg,  #e06287 5%,  #171C8F 75%);
+}
+.ingreso:hover {
+  background-position: right center;
+}
+.ingreso:active {
+  top: 2px;
+}
+
+@media screen and (min-width:0px) and (max-width:672px){
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	margin: 0;
+}
+
