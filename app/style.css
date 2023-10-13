@@ -41,10 +41,11 @@ body{
     .logo img{
       height: 100%;
       object-fit: cover;
-      object-position: 0 -50px;*/
+      object-position: 0 0px;*/
     
 .contenedorIngreso{
 	background: #e06287;
+	margin-top: 5px;
 }
 
 .ingreso {
@@ -71,6 +72,39 @@ body{
   top: 2px;
 }
 
+.cuerpo{
+	
+	background:#171C8F;
+	color: #fff;
+	text-align: left;
+
+	font-weight: bold;
+	font-style: italic;
+	line-height: 18px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 0 5px 0;
+	padding: 15px 0 15px 0;
+	}
+
+.cuerpo>div>p{
+	
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+.contacto{
+	background: #e06287; 
+	display: flex;
+	margin: 10px 0 0 0;
+	padding: 12px;
+	justify-content: space-around;
+}
+.contactob{
+	
+}
 @media screen and (min-width:0px) and (max-width:672px){
 body{
 	margin: 0;
