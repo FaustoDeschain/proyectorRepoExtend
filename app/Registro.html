@@ -1,260 +1,100 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 16px;
-	font-family: "Poppins",sans-serif;
+<!DOCTYPE html>
+<html lang="en">
 
-}
-
-header{
-    margin: 0 10% 0 10%;
-	display: flex;
-	padding: 10px;
-	align-items: center;
-}
-
-body{
+<head>
 	
-	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
+  <meta charset="UTF-8">
 	
-}
-
-.logo{
-
-	background: #171C8F;
-	width: 100%;
-	height: 120px;
-	border: solid 2px #e06287;
-	margin:  0;
-	padding: 0;
-	overflow: hidden;
-}
-
-.logo img{
-	width: 140px;
-}
-
-/*@supports(object-fit: cover){
-    .logo img{
-      height: 100%;
-      object-fit: cover;
-      object-position: 0 0px;*/
-    
-.contenedorIngreso{
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="https://kit.fontawesome.com/415e3bca59.js" crossorigin="anonymous"></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 	
-    margin: 0 10px 0 10px;
-    
-}
-
-.nav {
-  margin: 10px;
-  padding: 4px 5px 0 5px;
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  font-weight: bold;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 0 15px 0 15px ;
-  border: solid 2px navy;
-  background-size: 120% auto;
-  background-image: linear-gradient(315deg,  #e06287 5%,  #171C8F 75%);
-}  
-
-.nav:hover {
-    background-position: right center;
-  }
-  .nav:active {
-    top: 5px;
-  }
-
-.contenedorRegistro{
-	background: #e06287;
-	margin-top: 5px;
-}
-
-.Registro {
-    margin: 10px;
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 0 15px 0 15px ;
-    border: none;
-    background-size: 120% auto;
-    background-image: linear-gradient(315deg,  #e06287 5%,  #171C8F 75%);
-  }
-  .Registro:hover {
-    background-position: right center;
-  }
-  .Registro:active {
-    top: 2px;
-  }
-
-.cuerpo{
-    
-    text-align: left;
-    color:  #e06287;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 18px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 10px 30px 10px;
-    padding: 15px 0 15px 0;
-    }
-
-
-.cuerpo>div>p{
+  <link rel="stylesheet" href="style.css">
 	
-	margin-left: 20px;
-	margin-bottom: 10px;
-}
+  <script src="script.js"></script>
+	
+  <title>Document</title>
 
-.formulario {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        width: 70%;
-        padding: 2%;
-        margin: 5px 15% 0 15%;
-    }
+</head>
 
+<body>
 
+	<header class="header">
+		<div class="logo"><img src="imagenes/logo.png" alt="logo"></div>	
+	</header>
+	
+	
 
-    input[type=submit] {
-        width: 100%;
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-    background-color: #45a049;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:0px) and (max-width:672px){
+    <menu>
    
+        <h2>Formulario de registro</h2>
+        
+        <form class="formulario" action="show_data.html" target="_blank"> 
+          
+          <label for="firstname">Nombre: </label> <input type="text" name="firstname" placeholder="ingrese su nombre aqui..."> <br><br>
+          <label for="lastname">Apellido: </label> <input type="text" name="lastname" placeholder="ingrese su apellido aqui..."> <br><br>
+          <label for="street">Direccion: </label> <input type="text" name="address" placeholder="ingrese su direccion aqui..."> <br><br>
+          <label for="city">Ciudad: </label> <input type="text" name="city" value="C.A.B.A."> <br><br>
+          <label for="zipcode">Codigo postal: </label> <input type="text" name="zipcode" placeholder="ingrese su codigo postal aqui..."> 
 
-    body{
-    	margin: 0;
-    	padding: 0;
-    }
-
-    header{
-    	
-        margin: 0;
-    }
-
-    h2{
-    
-     font-size: 5vw;
-    }
-
-    p{
+          <br><br>
+          
+          <label for="birthDate">Fecha de Nacimiento (mm/dd/yyyy): </label> <input type="text" name="birthDate" > <br><br>
+          
+          <p>Genero: 
+            
+            <input type="radio" name="gender" value="hombre" checked>Hombre
+            <input type="radio" name="gender" value="mujer">Mujer
+            <input type="radio" name="gender" value="otro">Otro
+          
+          </p>
+        
+          <p>Estudios:
+            
+            <input type="checkbox" name="estudio" value="Primarios"> Primarios
+            <input type="checkbox" name="estudio" value="Secundarios"> Secundarios
+            <input type="checkbox" name="estudio" value="terciarios"> Terciarios
+            <input type="checkbox" name="estudio" value="Universitarios"> Universitarios
+            <input type="checkbox" name="estudio" value="Otros"> Otros
+          
+          </p>
+          
+          <input type="submit" value="Enviar">
+        
+        </form>
       
-        font-size: 3vw;
-    }
+    </menu>
 
-    footer{
-        
-        color: #171C8F;
-        text-align: center;
-        bottom: 0;
-        padding: 0;
-        height: 210px;
-        margin: 0 10px 0 10px;
-    }
+<footer>
+    
+    <nav>
+    
+      <br>
+      <a class="nav" href="index.html" >Home</a>
+      <a class="nav" href="About.html" >Nostros</a>
+      <a class="nav" href="Contacto.html">Contacto</a>
+      <a class="nav" href="Productos.html">Productos</a>
+    
+    </nav>
 
-    .redsoc{
-        
-        font-size: 2vw;
-        text-align: center;
-    }
-
-    .redsoc a{
-        
-        margin: 10px 6px;
-        font-size: 2vw;
-    }
-
-    .redsoc:hover{
-        color: #999999;
-
-    }
-
-    .formulario {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        width: 90%;
-        padding: 2%;
-        margin: 5px 5% 0 5%;
-    }
-
-
-
-    label, input{
-        font-size: 2vw;
-    }
-
-    input[type=text],input[type=password],
-    input[type=date],input[type=email],
-    input[type=number],input[type=url],input[type=text],
-    input[type=text],input[type=textArea], select{
-
-        width: 70%;
-        padding: 1vw;
-        margin: 1vw;
-        display: inline-block;
-        border: 1vw;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    input[type=submit] {
-        width: 100%;
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-    background-color: #45a049;
-    }
-}
-
+            <br>
+          
+          <a class="redsoc" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="redsoc" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="redsoc" href="https://www.pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          <a class="redsoc" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="redsoc" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      
+          <p>Derechos reservados @2023</p>
+          <br>
+</footer>
+</body>
+</html>
