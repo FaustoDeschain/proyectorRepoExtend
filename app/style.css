@@ -8,8 +8,8 @@
 }
 
 header{
+    margin: 0 10% 0 10%;
 	display: flex;
-	background: #171C8F;
 	padding: 10px;
 	align-items: center;
 }
@@ -19,11 +19,11 @@ body{
 	text-align: center;
 	margin-left: 10%;
 	margin-right: 10%;
-	background: Lavender;
 	
 }
 
 .logo{
+
 	background: #171C8F;
 	width: 100%;
 	height: 120px;
@@ -44,50 +44,82 @@ body{
       object-position: 0 0px;*/
     
 .contenedorIngreso{
-	background: #e06287;
-	margin-top: 5px;
+	
+    margin: 0 10px 0 10px;
+    
 }
 
-.ingreso {
+.nav {
   margin: 10px;
+  padding: 4px 5px 0 5px;
   min-width: 130px;
   height: 40px;
   color: #fff;
-  
   font-weight: bold;
+  align-items: center;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   outline: none;
   border-radius: 0 15px 0 15px ;
-  border: none;
+  border: solid 2px navy;
   background-size: 120% auto;
   background-image: linear-gradient(315deg,  #e06287 5%,  #171C8F 75%);
+}  
+
+.nav:hover {
+    background-position: right center;
+  }
+  .nav:active {
+    top: 5px;
+  }
+
+.contenedorRegistro{
+	background: #e06287;
+	margin-top: 5px;
 }
-.ingreso:hover {
-  background-position: right center;
-}
-.ingreso:active {
-  top: 2px;
-}
+
+.Registro {
+    margin: 10px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 0 15px 0 15px ;
+    border: none;
+    background-size: 120% auto;
+    background-image: linear-gradient(315deg,  #e06287 5%,  #171C8F 75%);
+  }
+  .Registro:hover {
+    background-position: right center;
+  }
+  .Registro:active {
+    top: 2px;
+  }
 
 .cuerpo{
-	
-	background:#171C8F;
-	color: #fff;
-	text-align: left;
+    
+    text-align: left;
+    color:  #e06287;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 18px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 10px 30px 10px;
+    padding: 15px 0 15px 0;
+    }
 
-	font-weight: bold;
-	font-style: italic;
-	line-height: 18px;
-	
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 5px 0 5px 0;
-	padding: 15px 0 15px 0;
-	}
 
 .cuerpo>div>p{
 	
@@ -95,23 +127,134 @@ body{
 	margin-bottom: 10px;
 }
 
-.contacto{
-	background: #e06287; 
-	display: flex;
-	margin: 10px 0 0 0;
-	padding: 12px;
-	justify-content: space-around;
-}
-.contactob{
-	
-}
-@media screen and (min-width:0px) and (max-width:672px){
-body{
-	margin: 0;
-	padding: 0;
-}
+.formulario {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        width: 70%;
+        padding: 2%;
+        margin: 5px 15% 0 15%;
+    }
 
-header{
-	margin: 0;
+
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:672px){
+   
+
+    body{
+    	margin: 0;
+    	padding: 0;
+    }
+
+    header{
+    	
+        margin: 0;
+    }
+
+    h2{
+    
+     font-size: 5vw;
+    }
+
+    p{
+      
+        font-size: 3vw;
+    }
+
+    footer{
+        
+        color: #171C8F;
+        text-align: center;
+        bottom: 0;
+        padding: 0;
+        height: 210px;
+        margin: 0 10px 0 10px;
+    }
+
+    .redsoc{
+        
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .redsoc a{
+        
+        margin: 10px 6px;
+        font-size: 2vw;
+    }
+
+    .redsoc:hover{
+        color: #999999;
+
+    }
+
+    .formulario {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        width: 90%;
+        padding: 2%;
+        margin: 5px 5% 0 5%;
+    }
+
+
+
+    label, input{
+        font-size: 2vw;
+    }
+
+    input[type=text],input[type=password],
+    input[type=date],input[type=email],
+    input[type=number],input[type=url],input[type=text],
+    input[type=text],input[type=textArea], select{
+
+        width: 70%;
+        padding: 1vw;
+        margin: 1vw;
+        display: inline-block;
+        border: 1vw;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
 }
 
